@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Render Gallery</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Skip Content -->
+    <a class="skip-link bg-dark text-light text-center" href="#gallery">Skip to Gallery</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">RENDER GALLERY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#aboutMe" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="home" class="hero-section text-center text-light">
+        <div class="conatainer">
+            <h1 class="display-4">Blending Imagination into reality</h1>
+            <p class="lead">Explore my arts and designs crafted in Blender.</p>
+            <a href="#gallery" class="btn btn-outline-light btn-lg">View my Work</a>
+        </div>
+    </section>
+
+    <!-- Gallery section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center my-4">Gallery</h2>
+            <!-- Image Carousel section -->
+            <div>
+                <h3 class="my-5">Images</h3>
+                <div class="py-5">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <picture>
+                                    <source srcset="assets/images/output_plasma_ball.webp" type="image/webp">
+                                    <img src="assets/images/Plasma ball - 512 samples.jpg" alt="Purple plasma ball over a reflective surface" class="d-block w-100" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <source srcset="assets/images/output_sunset.webp" type="image/webp">
+                                    <img src="assets/images/Sunset.png" alt="Vibrant Sunset scene" class="d-block w-100" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <source srcset="assets/images/output_optical-illusion.webp" type="image/webp">
+                                    <img src="assets/images/optical-illusion.jpg" alt="Optical illusion utilizing stars in space forming Gitlab logo" class="d-block w-100" loading="lazy">
+                                </picture>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="my-4">
+                    <a href="html/image.html" class="text-decoration-none">To see more images ...</a>
+                </div>
+            </div>
+            <!-- Video Carousel section -->
+            <div>
+                <h3 class="my-5">Videos</h3>
+                <div class="py-5">
+                    <div id="carouselExample2" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExample2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <video src="assets/videos/dissolving effect output.mp4" type="video/mp4" controls loop>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="carousel-item">
+                                <video src="assets/videos/soft body - jelly physics output.mp4" type="video/mp4" controls loop>
+                                    Your browser does not support the video tag.
+                                </vide>
+                            </div>
+                            <div class="carousel-item">
+                                <video src="assets/videos/sunset animation.mp4" type="video/mp4" controls loop>
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="my-4">
+                    <a href="html/video.html" class="text-decoration-none">To see more videos ...</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me section -->
+    <section id="aboutMe" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center my-4">About Me</h2>
+            <div class="row">
+                <p>Welcome to my gallery! I'm passionate about creating <b>Abstract looping animations & digital art using Blender.</b> My journey into 3D started as a creative exploration and over time, it became an exciting hobby where I experiment with movement, lighting, and procedural techniques. I enjoy pushing the limits of Blender's animation tools to craft visually engaging loops, often inspired by patterns, physics and surreal features. This gallery showcases some of my favorite works, where each one showcases my skill & imagination.</p>
+                <p>Beyond animation, I continuously explore new techniques in blender, refining my workflow and expanding my artistic approach. Whether it's procedural animations, shader experiments or motion loops, I love the challenge of bringing ideas to life in a visually captivating way.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Blender section -->
+    <section id="aboutBlender" class="p-3 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">About Blender</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="https://www.blender.org" target="_blank">
+                        <img src="assets/blender_logo.svg" alt="Blender logo" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-6 p-2">
+                    <p>Blender is a <b>powerful open-source 3D creation software</b> widely used for <b>animation, modeling, rendering, VFX and game development</b>. Known for its versatility, Blender offers an extensive toolset, including a node-based shader editor, sculpting features, physics simulations and a built-in compositor. Its real-time rendering engine, <b>Eevee</b>, and ray-tracing renderer, <b>Cycles</b>, allow artists to create stunning visuals and impressive realism.</p>
+                    <p>What sets Blender apart is its <b>community-driven development & accessibility</b> --it's free to use and constantly evolving with contributions from developers and artists worldwide. Whether you're beginner or an experienced creator, Blender provides endless possibilities for artistic expression, making it a favorite tool among digital artists, animators and hobbyists like me.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Get in Touch</h2>
+            <!-- <form action="">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name:</label>
+                    <input type="text" id="name" class="form-control" placeholder="sam">
+                </div>
+                <div class="mb-3">
+                    <label for="mail" class="form-label">Your E-Mail</label>
+                    <input type="email" id="mail" class="form-control" placeholder="abc@gamil.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea id="message" class="form-control" rows="5" placeholder="Please provide downloadable content."></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Send Message</button>
+            </form> -->
+            <div class="container text-center py-5">
+                <abbr title="Use this temporary form to contact me">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfp6KIPRmC5en04bAxEytNcqXE37fwurp6pEEY2THK7-R5nnw/viewform?embedded=true" target="_blank" class="text-decoration-none">To contact form ....</a>
+                </abbr>
+            </div>
+            <div class="text-center mt-3">
+                <a href="https://github.com/karthi1048" target="_blank" class="me-3" id="github">
+                    <i class="bi bi-github fs-3"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/karthikeyan616a" target="_blank">
+                    <i class="bi bi-linkedin fs-3"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top -->
+    <abbr title="Back to Top">
+        <button id="back-to-top" class="btn btn-dark rounded-circle position-fixed end-0">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </abbr>
+
+    <!-- Footer section -->
+    <footer class="text-center text-light bg-dark">
+        <p>&copy; 2025 Render Gallery site. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -8,9 +8,9 @@
     align-items: center;
 }
 
-@supports (background: url('/assets/images/Output_3D_logo.webp')){
+@supports (background: url('../assets/images/Output_3D_logo.webp')){
     .hero-section{
-        background: url('/assets/images/Output_3D_logo.webp') center/cover no-repeat;
+        background: url('../assets/images/Output_3D_logo.webp') center/cover no-repeat;
     }
 }
 

@@ -12,7 +12,7 @@ Welcome to my *Render Gallery*, a showcase of my Blender skills with help of ima
 - *Github pages* for deployment.
 
 ### How to Use
-- Visit the gallery: [Live_Demo](hhtps://karthi1048.github.io/render-gallery/)
+- Visit the gallery: [Live_Demo](https://karthi1048.github.io/render-gallery/)
 - Browse through the optimized images & videos.
 - Enjoy smooth & fast-loading media!
 

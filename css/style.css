@@ -21,7 +21,7 @@
     transition: transform 0.3s;
 }
 
-.gallery-item img:hover, .gallery-item video:hover {
+.gallery-item img:hover {
     transform: scale(1.05);
 }
 

@@ -16,3 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
         window.scrollTo({top: 0, behavior: 'smooth'});
     });
 });
+
+// Modal
+document.querySelectorAll("#gallery-img picture").forEach(picture => {
+    picture.addEventListener('click', function () {
+        document.getElementById('modalImage').src = this.getAttribute('data-bs-src');
+        document.getElementById('modalDescription').textContent = this.getAttribute('data-bs-desc');
+    });
+});

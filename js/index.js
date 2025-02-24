@@ -24,3 +24,16 @@ document.querySelectorAll("#gallery-img picture").forEach(picture => {
         document.getElementById('modalDescription').textContent = this.getAttribute('data-bs-desc');
     });
 });
+
+// Share
+function shareMedia(url, text){
+    if (navigator.share){
+        navigator.share({
+            title: 'Render Gallery image',
+            text: text,
+            url: window.location.origin + '/' + url
+        }).catch(console.error);
+    } else{
+        alert('Sharing not supported in this browser.');
+    }
+}

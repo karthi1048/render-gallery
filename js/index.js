@@ -37,3 +37,21 @@ function shareMedia(url, text){
         alert('Sharing not supported in this browser.');
     }
 }
+
+// Search
+function searchImages(){
+    let input = document.getElementById('searchBar').value.toLowerCase();
+    let imgContainers = document.querySelectorAll("#gallery-img .image-container");
+
+    imgContainers.forEach(container => {
+        let img = container.querySelector('picture img');
+        let altText = img.alt.toLowerCase();
+        let fileName = img.src.split('/').pop().toLowerCase();
+
+        if(altText.includes(input) || fileName.includes(input)){
+            container.style.display = "block";
+        } else{
+            container.style.display = "none";
+        }
+    });
+}

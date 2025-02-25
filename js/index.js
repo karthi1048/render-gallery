@@ -29,7 +29,7 @@ document.querySelectorAll("#gallery-img picture").forEach(picture => {
 function shareMedia(url, text){
     if (navigator.share){
         navigator.share({
-            title: 'Render Gallery image',
+            title: 'Render Gallery',
             text: text,
             url: window.location.origin + '/' + url
         }).catch(console.error);

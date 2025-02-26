@@ -1,6 +1,6 @@
 .hero-section {
     height: 100vh;
-    background: url('../assets/images/3D\ logo.jpg') center/cover no-repeat;
+    background: url('https://cdn.jsdelivr.net/gh/karthi1048/render-gallery@latest/assets/images/3D_logo.jpg') center/cover no-repeat;
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 95%);
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 35%, rgba(0,0,0,0) 95%);
     display: flex;
@@ -8,9 +8,9 @@
     align-items: center;
 }
 
-@supports (background: url('../assets/images/Output_3D_logo.webp')){
+@supports (background: url('https://cdn.jsdelivr.net/gh/karthi1048/render-gallery@latest/assets/images/Output_3D_logo.webp')){
     .hero-section{
-        background: url('../assets/images/Output_3D_logo.webp') center/cover no-repeat;
+        background: url('https://cdn.jsdelivr.net/gh/karthi1048/render-gallery@latest/assets/images/Output_3D_logo.webp') center/cover no-repeat;
     }
 }
 
